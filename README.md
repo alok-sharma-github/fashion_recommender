@@ -22,7 +22,7 @@ Fashion Recommendation Chat is a web application that provides fashion recommend
 - 
 ## Demo Video
 
-![Watch the demo video](/working.mp4)
+![Watch the demo video](/working.gif)
 
 ## Installation
 
