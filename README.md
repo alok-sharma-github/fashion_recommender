@@ -5,7 +5,7 @@ Fashion Recommendation Chat is a web application that provides fashion recommend
 ## Features
 
 - Users can select their gender (Men/Women).
-- Users can input their preferences (e.g., occasion, style).
+- Users can input their preferences in Natural Language.
 - Outfit recommendations are displayed based on the user's input.
 - Recommendations are provided for different categories such as tops, bottoms, footwear, accessories, and jewelry.
 - The application utilizes natural language processing to generate outfit recommendations.
@@ -19,6 +19,10 @@ Fashion Recommendation Chat is a web application that provides fashion recommend
 - **Web Scraping:** Beautiful Soup
 - **Machine Learning:** Scikit-learn
 - **Version Control:** Git, GitHub
+- 
+## Demo Video
+
+![Watch the demo video](/working.mp4)
 
 ## Installation
 
