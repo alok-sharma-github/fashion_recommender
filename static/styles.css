@@ -1,0 +1,228 @@
+/* Reset */
+body, h1, p, ul, ol, li, dl, dd, dt, form, fieldset, legend, input, textarea, button, select {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    background-image: url("design-2.jpg");
+    /* Ensure the background image covers the entire body */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: rgba(243, 154, 227, 0.5);
+    padding-top: 20px; /* Add some padding at the top for spacing */
+    border-bottom: 2px solid #007bff; /* Add a bottom border for visual separation */
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat {
+    flex-basis: 60%;
+}
+
+.chat-recommendations {
+    flex-basis: 35%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.disclaimer {
+    font-size: 14px;
+    color: #900;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #900;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fee;
+}
+
+.chat-history {
+    max-height: 700px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(243, 154, 227, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+.gender-select,
+.prompt-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+}
+
+.prompt-input {
+    flex: 1;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.user-input {
+    background-color: #e6f7ff; /* Light blue background color */
+    border: 1px solid #b3d9ff; /* Light blue border */
+    padding: 15px; /* Increased padding for better spacing */
+    margin-bottom: 20px; /* Increased margin for separation */
+    border-radius: 10px; /* Rounded corners for a softer look */
+}
+
+.user-input span {
+    display: block; /* Display spans as block elements */
+    margin-bottom: 8px; /* Add spacing between spans */
+    font-weight: bold;
+    color: #007bff; /* Blue color */
+}
+
+.searches {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-stretch: condensed;
+}
+
+.outfit-image {
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    cursor: pointer;
+}
+
+.outfit-image:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.category-carousel {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* CSS styling for the button with arrow icon */
+.load-more-button {
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    border: none; /* Remove border */
+    border-radius: 50%; /* Rounded shape */
+    padding: 10px; /* Padding */
+    cursor: pointer; /* Cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.load-more-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* CSS styling for the arrow icon */
+.load-more-button svg {
+    width: 16px; /* Adjust width of the arrow icon */
+    height: 16px; /* Adjust height of the arrow icon */
+    vertical-align: middle; /* Align the icon vertically */
+    margin-right: 5px; /* Add margin between icon and text (if any) */
+}
+/* CSS styling for the "Load Previous" button with arrow icon */
+.load-previous-button {
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    border: none; /* Remove border */
+    border-radius: 50%; /* Rounded shape */
+    padding: 10px; /* Padding */
+    cursor: pointer; /* Cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.load-previous-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* CSS styling for the arrow icon */
+.load-previous-button svg {
+    width: 16px; /* Adjust width of the arrow icon */
+    height: 16px; /* Adjust height of the arrow icon */
+    vertical-align: middle; /* Align the icon vertically */
+    margin-right: 5px; /* Add margin between icon and text (if any) */
+}
+
+
+/* CSS styling for the spinner */
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #007bff; /* Color of the spinner */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* Animation for spinning */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Ensure spinner is on top of other content */
+    display: none; /* Initially hidden */
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
