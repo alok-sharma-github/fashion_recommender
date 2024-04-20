@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Recommendation Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Background Container with Background Image/Pattern -->
+    <div class="background-container">
+        <!-- Container for the entire content of the webpage -->
+        <div class="container">
+            
+            <header>
+                <h3>Welcome to Fashion Recommendation Chat! Start by entering your preferences</h3>
+            </header>
+            
+            <!-- Chat Section -->
+            <div class="chat-section">
+                <!-- Chat History -->
+                <div class="chat-history" id="chat-history">
+                    <!-- Loading spinner -->
+                    <div class="spinner" id="spinner">
+                    </div>
+                                      
+
+                </div>
+                
+                <!-- Chat Input -->
+                <div class="chat-input">
+                    <form id="recommendation-form" method="POST" action="/recommend">
+                        <select name="gender" class="gender-select">
+                            <option value="men">Men</option>
+                            <option value="women">Women</option>
+                        </select>
+                        <input type="text" name="prompt" class="prompt-input" placeholder="Enter your prompt...">
+                        <button type="submit" class="submit-button">Get Recommendations</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Recommendations Section -->
+            <div class="recommendations-section">
+                <!-- Recommendations content goes here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
