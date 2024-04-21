@@ -4,8 +4,6 @@ from sklearn.metrics.pairwise import cosine_similarity
 import google.generativeai as genai
 import json
 
-GOOGLE_AI_STUDIO = 'AIzaSyA717Yuw0cr7XGkQ7bkjMQShUje-nx5feY'
-
 genai.configure(api_key=GOOGLE_AI_STUDIO)
 
 def process_and_embed(user, text):
