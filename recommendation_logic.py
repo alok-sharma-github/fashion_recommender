@@ -3,8 +3,13 @@ import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 import google.generativeai as genai
 import json
+import configparser
 
-genai.configure(api_key=GOOGLE_AI_STUDIO)
+# Read API key from config file
+config = configparser.ConfigParser()
+config.read('config.ini')
+api_key = config['API']['key']
+genai.configure(api_key=api_key)
 
 def process_and_embed(user, text):
     text = user + " " + text
